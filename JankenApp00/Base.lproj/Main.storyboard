@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JankenApp00" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHQ-kV-4r2">
+                                <rect key="frame" x="157" y="279" width="100" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最初はグー！ジャンケン…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTX-P8-dVI">
+                                <rect key="frame" x="57" y="498" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PDJ-xL-PtL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="oqx-1J-SyK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bu-mv-AIL">
+                                <rect key="frame" x="157" y="648" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="GHs-Ac-DOL"/>
+                                    <constraint firstAttribute="height" constant="100" id="gom-T2-UkZ"/>
+                                </constraints>
+                                <state key="normal" image="janken_choki"/>
+                                <connections>
+                                    <action selector="jankenChokiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSi-g8-PLK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAA-4z-6z6">
+                                <rect key="frame" x="257" y="648" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="jKv-iE-C1q"/>
+                                    <constraint firstAttribute="height" constant="100" id="ze2-9P-t9J"/>
+                                </constraints>
+                                <state key="normal" image="janken_pa"/>
+                                <connections>
+                                    <action selector="jankenPaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grf-Ie-qPQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="As5-aO-HZz">
+                                <rect key="frame" x="57" y="648" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4el-QM-hfv"/>
+                                    <constraint firstAttribute="height" constant="100" id="Jff-MO-gMv"/>
+                                </constraints>
+                                <state key="normal" image="janken_gu"/>
+                                <connections>
+                                    <action selector="jankenGuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWV-BG-YfV"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j37-Xu-NB5">
+                                <rect key="frame" x="157" y="95" width="100" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2w-b8-DcS">
+                                <rect key="frame" x="157" y="558" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.74445004199999998" green="0.94281695389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PhT-AC-GIL"/>
+                                    <constraint firstAttribute="width" constant="100" id="Wqo-yE-wyq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KTX-P8-dVI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0w3-CO-NFy"/>
+                            <constraint firstItem="YHQ-kV-4r2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="1RQ-wk-CN8"/>
+                            <constraint firstItem="nAA-4z-6z6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="250" id="67h-Z7-Dmo"/>
+                            <constraint firstItem="6Bu-mv-AIL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="300" id="6hu-Nk-Uyc"/>
+                            <constraint firstItem="As5-aO-HZz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="CON-Qp-3oq"/>
+                            <constraint firstItem="j37-Xu-NB5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KpO-XY-6pg"/>
+                            <constraint firstItem="As5-aO-HZz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="250" id="L9S-Sh-7Nm"/>
+                            <constraint firstItem="j37-Xu-NB5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MSR-lu-QPg"/>
+                            <constraint firstItem="6Bu-mv-AIL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="250" id="MbH-q6-70Z"/>
+                            <constraint firstItem="KTX-P8-dVI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="70" id="ThV-LL-pwQ"/>
+                            <constraint firstItem="g2w-b8-DcS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VTb-cB-YsZ"/>
+                            <constraint firstItem="g2w-b8-DcS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZW9-dF-Pjx"/>
+                            <constraint firstItem="g2w-b8-DcS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="130" id="Zyb-Ip-3Wg"/>
+                            <constraint firstItem="nAA-4z-6z6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="bEu-jb-re2"/>
+                            <constraint firstItem="As5-aO-HZz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="bgL-aj-Ye5"/>
+                            <constraint firstItem="YHQ-kV-4r2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h9e-Su-Rvy"/>
+                            <constraint firstItem="j37-Xu-NB5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="rCP-yT-GIs"/>
+                            <constraint firstItem="6Bu-mv-AIL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zbU-A5-6Tt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="JankenponImage" destination="KTX-P8-dVI" id="7aW-3Z-rMT"/>
+                        <outlet property="JankenponLabel" destination="KTX-P8-dVI" id="TLn-HS-Hdk"/>
+                        <outlet property="MySelfImage" destination="YHQ-kV-4r2" id="hLm-u5-Kbl"/>
+                        <outlet property="ResultLabel" destination="g2w-b8-DcS" id="z82-CI-q1d"/>
+                        <outlet property="YourImage" destination="j37-Xu-NB5" id="QfX-t5-nQa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="janken_choki" width="100" height="100"/>
+        <image name="janken_gu" width="100" height="100"/>
+        <image name="janken_pa" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
