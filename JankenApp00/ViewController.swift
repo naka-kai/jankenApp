@@ -135,6 +135,20 @@ class ViewController: UIViewController {
         
     }
     
+    func winOrLose() {
+        
+        if mySelfImageNo == yourImageNo {
+            
+            ResultLabel.text = "あいこです"
+            
+        }else if (mySelfImageNo == 0 && yourImageNo == 2) || (mySelfImageNo == 1 && yourImageNo == 0) || (mySelfImageNo == 2 && yourImageNo == 1) {
+            
+            ResultLabel.text = "あなたの勝ちです"
+        } else {
+            ResultLabel.text = "あなたの負けです"
+        }
+    }
+    
 
     @IBAction func jankenGuButton(_ sender: Any) {
         
@@ -149,7 +163,9 @@ class ViewController: UIViewController {
         
         changeJankenponLabel()
         //上記のchangeJankenponLabelメソッドを呼び出す
-    
+        
+        winOrLose()
+        
     }
     
     @IBAction func jankenChokiButton(_ sender: Any) {
@@ -165,7 +181,12 @@ class ViewController: UIViewController {
         
         changeJankenponLabel()
         //上記のchangeJankenponLabelメソッドを呼び出す
+        
+        winOrLose()
+    
     }
+    
+        
     
     @IBAction func jankenPaButton(_ sender: Any) {
         
@@ -180,6 +201,8 @@ class ViewController: UIViewController {
         
         changeJankenponLabel()
         //上記のchangeJankenponLabelメソッドを呼び出す
+        
+        winOrLose()
         
     }
     
